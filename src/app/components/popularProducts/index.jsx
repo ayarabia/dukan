@@ -71,5 +71,4 @@ function MostPopularProducts(props) {
     </div>
   );
 }
-
 export default MostPopularProducts;

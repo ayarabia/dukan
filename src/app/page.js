@@ -1,5 +1,4 @@
 "use client";
-import CustomeButton from "./components/customeButton";
 import Footer from "./components/footer";
 import Gifts from "./components/gifts";
 import HighestCashback from "./components/highestCashback";
@@ -7,7 +6,6 @@ import Info from "./components/info";
 import Links from "./components/links";
 import NavBar from "./components/navbar";
 import Orders from "./components/orders";
-import ProductCard from "./components/productCard";
 import Productes from "./components/products/index";
 import Timers from "./components/timers";
 import TopNav from "./components/top-nav";
@@ -44,25 +42,25 @@ export default function Home() {
   return (
     <main>
       <div className="bg-secondary  block lg:hidden  ">
-       <MobileNavbar />
+        <MobileNavbar />
       </div>
       <div className="bg-blue block lg:hidden ">
-       <Address/>
+        <Address />
       </div>
       <div className="container mx-auto">
         <TopNav />
         <NavBar />
         <Links />
         <Welcome />
-      
         <Orders />
-         
         <Productes />
         <Info />
         <HighestCashback highestCashback={highestCashback} />
-        </div>
-     <div className="hidden lg:block">   <Offers/></div>
-        <div className="container mx-auto">
+      </div>
+      <div className="hidden lg:block">
+       <Offers />
+      </div>
+      <div className="container mx-auto">
         <TopDeals topDeals={topDeals} />
         <Gifts />
         <MostPopularProducts popularProducts={popularProducts} />

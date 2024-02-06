@@ -1,6 +1,5 @@
 import React from "react";
 import CustomeButton from "../customeButton";
-
 function Timers() {
   return (
     <div className="bg-[#004837] rounded-lg py-12  text-center px-4">
@@ -18,15 +17,15 @@ function Timers() {
         </div>
         <span className="text-white block -mt-4">:</span>
         <div className="flex flex-col items-center">
-        <div className="flex">
-        <p className="bg-primary text-white p-3 font-bold lg:text-6xl text-4xl flex items-center rounded me-1 ms-3">
-          1
-        </p>
-        <p className="bg-primary text-white p-3 font-bold lg:text-6xl text-4xl flex items-center rounded me-1">
-          8
-        </p>
-        </div>  
-        <p className="text-white mt-2">minutes</p>          
+          <div className="flex">
+            <p className="bg-primary text-white p-3 font-bold lg:text-6xl text-4xl flex items-center rounded me-1 ms-3">
+              1
+            </p>
+            <p className="bg-primary text-white p-3 font-bold lg:text-6xl text-4xl flex items-center rounded me-1">
+              8
+            </p>
+          </div>
+          <p className="text-white mt-2">minutes</p>
         </div>
       </div>
       <p className="text-primary text-2xl font-bold mt-8">
@@ -41,5 +40,4 @@ function Timers() {
     </div>
   );
 }
-
 export default Timers;

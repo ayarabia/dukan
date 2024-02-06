@@ -1,10 +1,10 @@
 "use client";
-import React, { useState  ,useRef} from "react";
+import React, { useState, useRef } from "react";
 import Slider from "react-slick";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import  "./style.css";
+import "./style.css";
 import Image from "next/image";
 import image from "../../images/image1.svg";
 function Productes() {
@@ -26,25 +26,24 @@ function Productes() {
         settings: {
           slidesToShow: 5,
           slidesToScroll: 1,
-        }
+        },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 2,
-          initialSlide: 2
-        }
+          initialSlide: 2,
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   const cards = [
     {
@@ -102,18 +101,20 @@ function Productes() {
   ];
   return (
     <div className="slider-container">
-
-<div className="controls relative">
-        <button  onClick={previous} className="prev absolute  "> 
+      <div className="controls relative">
+        <button onClick={previous} className="prev absolute  ">
           <FaChevronLeft />
         </button>
-        <button  onClick={next} className="next absolute">
+        <button onClick={next} className="next absolute">
           <FaChevronRight />
         </button>
       </div>
-      <Slider   ref={slider => {
+      <Slider
+        ref={(slider) => {
           sliderRef = slider;
-        }} {...sliderSettings}>
+        }}
+        {...sliderSettings}
+      >
         {cards.map((card, index) => (
           <div key={index} className="px-8">
             <Image
@@ -130,5 +131,4 @@ function Productes() {
     </div>
   );
 }
-
 export default Productes;

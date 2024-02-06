@@ -6,8 +6,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ProductCard from "../productCard";
 function PersonalCare(props) {
-    // console.log(props.personalCare);
-   
   let sliderRef = useRef(null);
   const next = () => {
     console.log("next");

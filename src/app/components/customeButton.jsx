@@ -1,5 +1,4 @@
 import React from 'react'
-
 function CustomeButton(props) {
   return (
     <button className={`px-8  py-2 rounded-lg text-base font-medium ${props.className}`}>
@@ -7,5 +6,4 @@ function CustomeButton(props) {
     </button>
   )
 }
-
 export default CustomeButton
