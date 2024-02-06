@@ -1,0 +1,15 @@
+.controls .prev {
+  color: #b0b0b0;
+  left: 0px;
+  top: 50px;
+  font-size: 20px;
+  z-index: 88;
+}
+.controls .next {
+  top: 50px;
+  z-index: 88;
+  right: 0px;
+  font-size: 20px;
+  color: #00a9a2;
+}
+

@@ -1,0 +1,22 @@
+.highestCashback .controls .prev {
+    color: #b0b0b0;
+    left: 93%;
+    top: -40px;
+    font-size: 20px;
+    z-index: 88;
+  }
+  .highestCashback .controls .next {
+    top: -40px;
+    z-index: 88;
+    right: 0px;
+    font-size: 20px;
+    color: #00a9a2;
+  }
+  
+  @media(max-width:912px) {
+    .highestCashback .controls .prev {
+      left:80%;}
+      .highestCashback .controls .next {
+        right: 10px;
+      }
+  }

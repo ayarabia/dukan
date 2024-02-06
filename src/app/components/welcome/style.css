@@ -1,0 +1,7 @@
+.welcome .slick-dots li.slick-active button:before{
+    color: #FF4300 !important;
+}
+.welcome .slick-dots li button:before{
+    margin-top: 15px;
+    font-size: 11px !important;
+}
